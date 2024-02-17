@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/url_launcher_string.dart' ;
 
 void main() {
   runApp(const NewsTipsPage());
@@ -43,6 +43,7 @@ class NewsTipsPage extends StatelessWidget {
           ),
         ),
         body: ListView(
+          physics: const BouncingScrollPhysics(),
           padding: const EdgeInsets.all(8),
           children: [
             Image.network(
